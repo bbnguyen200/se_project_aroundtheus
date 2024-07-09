@@ -8,19 +8,22 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   padding: 0 19px;
-  /*display: none;*/
+  display: none;
 }
 
-/*.modal_opened {
+.modal_opened {
   display: flex;
-} */
+} 
 
 .modal__container {
   background-color: white;
   position: relative;
   margin: auto;
-  padding: 36px;
+  padding: 36px 50px;
   border-radius: 10px;
+  border-radius: 8px;
+  max-width: 730px;
+
 }
 
 .modal__heading {
@@ -64,6 +67,9 @@
 }
 
 .modal__form {
+  display:flex;
+  flex-direction: column; 
+  margin: 36px 0 0;
 }
 
 @media screen and (max-width: 720px) {
