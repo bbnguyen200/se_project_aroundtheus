@@ -41,96 +41,6 @@
         </section>
         <section class="gallery page__section">
           <ul class="gallery__cards">
-            <li class="card">
-              <img
-                src="./images/yosemite-valley.png"
-                alt="Yosemite Valley"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Yosemite Valley</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/lake-louise.png"
-                alt="Lake Louise"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Lake Louise</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/bald-mountains.png"
-                alt="Bald Mountains"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Bald Mountains</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/latemar.png"
-                alt="Latemar"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Latemar</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/vanoise-national-park.png"
-                alt="Vanoise National Park"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Vanoise National Park</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/lago-di-braies.png"
-                alt="Lago di Braies"
-                class="card__image"
-              />
-              <div class="card__description">
-                <h2 class="card__title">Lago di Braies</h2>
-                <button
-                  class="card__like-button"
-                  aria-label="like"
-                  type="button"
-                ></button>
-              </div>
-            </li>
           </ul>
         </section>
       </main>
@@ -139,14 +49,24 @@
       </footer>
     </div>
 
+    <template id="card-template">
+      <li class="card">
+        <img src="" alt="" class="card__image">
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button class="card__like-button" type = "button"></button>
+        </div>
+      </li>
+    </template>
+
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close" id="profile-edit-close-button"></button>
         <p class="modal__heading">Edit Profile</p>
         <form class="modal__form">
-          <input type="text" name="title" />
-          <input type="text" name="description" />
-          <button class="modal__button">Save</button>
+          <input class='modal__input' id ='profile-title-input' type="text" name="title" placeholder="Name" />
+          <input class='modal__input' id='profile-description-input'type="text" name="description" placeholder="Description"/>
+          <button class="modal__save">Save</button>
         </form>
       </div>
     </div>
