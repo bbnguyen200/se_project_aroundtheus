@@ -21,7 +21,7 @@ const initialCards = [
   },
   {
     name: "Lagi di Braies",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
+    link: "https://practicum-content.s3.us  -west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
   },
 ];
 
@@ -53,7 +53,6 @@ function getCardElement(cardData){
   cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
   return cardElement;
-  cardListEl.append(cardElement);
 }
 
 /* Event Handlers*/
