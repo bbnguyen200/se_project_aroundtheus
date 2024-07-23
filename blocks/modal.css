@@ -101,10 +101,41 @@
 }
 
 @media screen and (max-width: 720px) {
+  .modal{
+    box-sizing: border-box;
+    padding: 0 19px;
+  }
+  .modal__container{
+    position: relative;
+    padding: 25px 22px;
+  }
+  
+  .modal__heading{
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .modal__save{
+    height: 46px;
+    margin-top: 45px;
+  }
+
+  #profile-title-input{
+    margin-top: 0;
+  }
+
+  #profile-description-input{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
   .modal__close {
     bottom: calc(100% + 14px);
     right: 0;
     height: 26px;
     width: 26px;
   }
+  
+  
+  
 }
